@@ -44,8 +44,3 @@ Track.explore(".check-pricing", "Check Pricing",
 </body>
 </html>
 ```
-
-
-## Contributing
-
-##
