@@ -44,3 +44,20 @@ Track.explore(".check-pricing", "Check Pricing",
 </body>
 </html>
 ```
+
+## Contributing
+We're flattered you want to spend your time helping out. Read our contributor
+guidelines for more details!
+
+
+## Developing
+
+### Testing Locally
+Right now, we're kind of missing test automation. Our smoke-test strategy is:
+
+1. Copy-paste track.js into a site that uses it.
+2. Open the segment.com debugger.
+3. Poke around at user interface elements.
+4. Watch events come through.
+
+We'd love a pull request which adds unit and integration tests!
