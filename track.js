@@ -1,16 +1,41 @@
 (function(exports) {
   var CTA_EVENT_ID='Clicked CTA';
+  var EXPLORE_EVENT_ID='Explored Towards Goal';
 
   exports.Track = {
+    CTA_EVENT_ID: "Clicked CTA",
+    EXPLORE_EVENT_ID: "Explored Goal",
+    // Attaches a call-to-action event to a link or form.
+    // Example:
+    //    Track.cta(".begin-sign-up", "Began Sign up", { color: "Green"
+    //                                                 , location: "Header Top-Right"
+    //                                                 , category: "Sign up"
+    //                                                 , pageSubject: "Pricing overview" });
     cta: function(selector, cta,  options) {
-      forElements(selector, function(element) {
-        var decoratedOptions = optionsFor(element, cta, options);
-        analyticsFnFor(element).call(analytics, element, CTA_EVENT_ID, decoratedOptions);
-      });
+      applyTracking(selector, element, action, CTA_EVENT_ID, options)
     },
+    // Attaches a call-to-action event to a link or form.
+    // Example:
+    //    Track.explore(".visit-newsletter-archive",
+    //                  "Visit Newsletter Archive",
+    //                  { color: "Blue"
+    //                  , location: "Right Sidebar"
+    //                  , category: "Sign up"
+    //                  , pageSubject: "Pricing overview" });
+    explore: function(selector, exploration, options) {
+      applyTracking(selector, element, action, EXPLORE_EVENT_ID, options)
+    }
   }
 
   return exports.Track;
+
+  function applyTracking(selector, element, action, event_id, options) {
+    forElements(selector, function(element) {
+      var decoratedOptions = optionsFor(element, action, options);
+      analyticsFnFor(element).call(analytics, element, event_id, decoratedOptions);
+    });
+  }
+
   function forElements(selector, callback) {
     var elements = document.querySelectorAll(selector);
     Array.prototype.forEach.call(elements, callback);
