@@ -3,7 +3,7 @@ Semantic analytics event triggers for segment.io
 
 ## Usage
 1. Download the [pre-release
-source](https://raw.githubusercontent.com/zincmade/track.js/lib/track.js)
+source](https://raw.githubusercontent.com/zincmade/track.js/master/lib/track.js)
 2. Add it to your project with a `<script>` tag.
 3. Start describing events!
 4. Give us feedback on what would be better!
