@@ -19,15 +19,14 @@ There are three ways you can help out:
 ## How Do I Make Suggestions?
 We prefer you [create an
 issue](https://help.github.com/articles/creating-an-issue/) in our [issue
-tracker](https://github.com/zincmade/track.js/issues), but if you're
+tracker](https://waffle.io/zincmade/track.js), but if you're
 uncomfortable with that send an email with your suggestion to
 [yo+track-js@zincma.de](mailto: yo+track-js@zincma.de).
 
 ## How Do I Know What To Work On?
 
-We use [github issues](https://github.com/zincmade/track.js/issues) and
-[waffle](https://waffle.io/zincmade/track.js) to plan our work. Feel free to
-grab anything marked "ready", or come up with something new and awesome!
+We use [waffle](https://waffle.io/zincmade/track.js) to plan our work. Feel free
+to grab anything marked "ready", or come up with something new and awesome!
 
 ## How Do I Submit Work?
 

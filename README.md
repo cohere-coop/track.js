@@ -46,8 +46,9 @@ Track.explore(".check-pricing", "Check Pricing",
 ```
 
 ## Contributing
-We're flattered you want to spend your time helping out. Read our contributor
-guidelines for more details!
+We're flattered you want to spend your time helping out. Read our [contributor
+guidelines](CONTRIBUTING.md) for more details, or hop onto our [issue
+tracker](https://waffle.io/zincmade/track.js) and grab a feature or bug!
 
 
 ## Developing
